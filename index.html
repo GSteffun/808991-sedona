@@ -41,22 +41,22 @@
                         Седона - не аттракцион для туристов, там течет своя жизнь.
                     </p>
                     <p>
-                        <img src="img/features-item.jpg" width="400" height="150" alt="Фото города Седона">
+                        <img src="img/features-item-1.jpg" width="400" height="150" alt="Фото города Седона">
                     </p>
                     <ul class="item-subfeatures-list">
                         <li class="item-subfeatures">
                             <h4>Жилье</h4>
-                            <img src="item-subfeatures.jpg" width="100" height="100" alt="Иконка 'Жилье'">
+                            <img src="img/item-subfeatures-icon-1.svg" width="100" height="100" alt="Иконка 'Жилье'">
                             <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                         </li>
                         <li class="item-subfeatures">
                             <h4>Еда</h4>
-                            <img src="item-subfeatures.jpg" width="100" height="100" alt="Иконка 'Еда'">
+                            <img src="img/item-subfeatures-icon-2.svg" width="100" height="100" alt="Иконка 'Еда'">
                             <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
                         </li>
                         <li class="item-subfeatures">
                             <h4>Сувениры</h4>
-                            <img src="item-subfeatures.jpg" width="100" height="100" alt="Иконка 'Сувениры'">
+                            <img src="img/item-subfeatures-icon-3.svg" width="100" height="100" alt="Иконка 'Сувениры'">
                             <p>Не только китайского, но и местного производства!</p>
                         </li>
                     </ul>
@@ -69,7 +69,7 @@
                         Да, по нему можно пройти! Если конечно вы осмелитесь
                     </p>
                     <p>
-                        <img src="img/features-item.jpg" width="400" height="150" alt="Фото моста дяьвола">
+                        <img src="img/features-item-2.jpg" width="400" height="150" alt="Фото моста дяьвола">
                     </p>
                 </li>
                 <li class="features-item">
@@ -105,8 +105,12 @@
                 <b>Заинтересовались?</b>
                 Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне
             </p>
-            <span class="button">Поиск гостиницы в Седоне</span>
-            <img src="img/map.jpg" width="600" height="300" alt="Карта города">
+            <p>
+                <img src="img/map.jpg" width="600" height="300" alt="Карта города">
+            </p>
+            <p>
+                <button class="serach-hotels-button">Поиск гостиницы в Седоне</button>
+            </p>
         </section>
     </main>
 
@@ -122,15 +126,42 @@
         <p class="footer-copyright">
             Website by
             <a href="https://htmlacademy.ru">
-                <img src="html-academy-logo.jpg" width="200" height="100" alt="Логотип HTML Академии">
+                <img src="img/footer-logo.svg" width="200" height="100" alt="Логотип HTML Академии">
             </a>
         </p>
     </footer>
 
     <section class="modal modal-search">
         <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
-        <!--Здесь будет форма! -->
-        <span class="modal-close">x</span>
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
+            <fieldset>
+                <legend class="visually-hidden">Поиск гостиницы в Седоне</legend>
+                <ul>
+                    <li>
+                        <label for="arrival-date">Дата заезда</label>
+                        <input type="date" id="arrival-date" name="arrival-date" value="2017-04-24">
+                    </li>
+                    <li>
+                        <label for="date-of-departure">Дата заезда</label>
+                        <input type="date" id="date-of-departure" name="date-of-departure" value="2017-06-04">
+                    </li>
+                </ul>
+                <p>
+                    <label for="adult-count">Взрослые:</label>
+                    <button class="button">-</button>
+                    <input type="text" id="adult-count" name="adult-count" value="2">
+                    <button class="button">+</button>
+                </p>
+                <p>
+                    <label for="children-count">Дети:</label>
+                    <button class="button">-</button>
+                    <input type="text" id="children-count" name="children-count" value="0">
+                    <button class="button">+</button>
+                </p>
+                <button class="button" type="submit">Найти</button>
+            </fieldset>
+        </form>
+        <button class="modal-close">Закрыть</button>
     </section>
 
 </body>
