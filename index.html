@@ -10,20 +10,20 @@
     <header class="main-header">
         <nav class="main-navigation">
             <a class="main-header-logo" href="#">
-                <img src="img/index-logo.svg" width="368" height="153" alt="Логотип Седона">
+                <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Седона">
             </a>
             <ul class="site-navigation">
                 <li><a href="info.html">Информация</a></li>
                 <li><a href="media.html">Фото и видео</a></li>
                 <li><a href="map.html">Карта штата</a></li>
-                <li><a href="hotels.html">Гостиницы</a></li>
+                <li><a href="catalog.html">Гостиницы</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="container">
         <h1 class="visually-hidden">Туристический город Седона</h1>
-        <img src="img/main-img.jpg" width="800" height="360" alt="Welcome to the gorgeous Sedona">
+        <img src="img/main-img.jpg" width="1200" height="773" alt="Welcome to the gorgeous Sedona">
 
         <section class="features">
             <h2 class="visually-hidden">Преимущества Седоны</h2>
@@ -41,22 +41,22 @@
                         Седона - не аттракцион для туристов, там течет своя жизнь.
                     </p>
                     <p>
-                        <img src="img/features-item-1.jpg" width="400" height="150" alt="Фото города Седона">
+                        <img src="img/features-item-1.jpg" width="800" height="256" alt="Фото города Седона">
                     </p>
                     <ul class="item-subfeatures-list">
                         <li class="item-subfeatures">
                             <h4>Жилье</h4>
-                            <img src="img/item-subfeatures-icon-1.svg" width="100" height="100" alt="Иконка 'Жилье'">
+                            <img src="img/icon-1.svg" width="64" height="76" alt="Иконка 'Жилье'">
                             <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                         </li>
                         <li class="item-subfeatures">
                             <h4>Еда</h4>
-                            <img src="img/item-subfeatures-icon-2.svg" width="100" height="100" alt="Иконка 'Еда'">
+                            <img src="img/icon-2.svg" width="64" height="76" alt="Иконка 'Еда'">
                             <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
                         </li>
                         <li class="item-subfeatures">
                             <h4>Сувениры</h4>
-                            <img src="img/item-subfeatures-icon-3.svg" width="100" height="100" alt="Иконка 'Сувениры'">
+                            <img src="img/icon-3.svg" width="64" height="76" alt="Иконка 'Сувениры'">
                             <p>Не только китайского, но и местного производства!</p>
                         </li>
                     </ul>
@@ -69,7 +69,7 @@
                         Да, по нему можно пройти! Если конечно вы осмелитесь
                     </p>
                     <p>
-                        <img src="img/features-item-2.jpg" width="400" height="150" alt="Фото моста дяьвола">
+                        <img src="img/features-item-2.jpg" width="800" height="256" alt="Фото моста дяьвола">
                     </p>
                 </li>
                 <li class="features-item">
@@ -106,10 +106,10 @@
                 Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне
             </p>
             <p>
-                <img src="img/map.jpg" width="600" height="300" alt="Карта города">
+                <img src="img/map.jpg" width="1200" height="593" alt="Карта города">
             </p>
             <p>
-                <button class="serach-hotels-button">Поиск гостиницы в Седоне</button>
+                <a href="search.html" class="button">Поиск гостиницы в Седоне</a>
             </p>
         </section>
     </main>
@@ -126,7 +126,7 @@
         <p class="footer-copyright">
             Website by
             <a href="https://htmlacademy.ru">
-                <img src="img/footer-logo.svg" width="200" height="100" alt="Логотип HTML Академии">
+                <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Академии">
             </a>
         </p>
     </footer>
@@ -134,8 +134,7 @@
     <section class="modal modal-search">
         <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
         <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
-            <fieldset>
-                <legend class="visually-hidden">Поиск гостиницы в Седоне</legend>
+            <div class="serach-options">
                 <ul>
                     <li>
                         <label for="arrival-date">Дата заезда</label>
@@ -148,20 +147,20 @@
                 </ul>
                 <p>
                     <label for="adult-count">Взрослые:</label>
-                    <button class="button">-</button>
+                    <button class="button" type="button">-</button>
                     <input type="text" id="adult-count" name="adult-count" value="2">
-                    <button class="button">+</button>
+                    <button class="button" type="button">+</button>
                 </p>
                 <p>
                     <label for="children-count">Дети:</label>
-                    <button class="button">-</button>
+                    <button class="button" type="button">-</button>
                     <input type="text" id="children-count" name="children-count" value="0">
-                    <button class="button">+</button>
+                    <button class="button" type="button">+</button>
                 </p>
                 <button class="button" type="submit">Найти</button>
-            </fieldset>
+            </div>
         </form>
-        <button class="modal-close">Закрыть</button>
+        <button class="modal-close" type="button">Закрыть</button>
     </section>
 
 </body>
