@@ -118,9 +118,21 @@
         <p class="footer-hashtag">#VISITSEDONA</p>
         <div class="footer-social">
             <ul>
-                <li><a class="social-button" href="#">Твиттер</a></li>
-                <li><a class="social-button" href="#">Фейсбук</a></li>
-                <li><a class="social-button" href="#">Ютуб</a></li>
+                <li>
+                    <a class="social-button" href="#">
+                        <span class="visually-hidden">Твиттер</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="social-button" href="#">
+                       <span class="visually-hidden">Фейсбук</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="social-button" href="#">
+                        <span class="visually-hidden">Ютуб</span>
+                    </a>
+                </li>
             </ul>
         </div>
         <p class="footer-copyright">
@@ -138,29 +150,47 @@
                 <ul>
                     <li>
                         <label for="arrival-date">Дата заезда</label>
-                        <input type="text" id="arrival-date" name="arrival-date" value="2017-04-24">
+                        <input type="text" id="arrival-date" name="arrival-date" placeholder="2017-04-24">
                     </li>
                     <li>
-                        <label for="date-of-departure">Дата заезда</label>
-                        <input type="text" id="date-of-departure" name="date-of-departure" value="2017-06-04">
+                        <label for="date-of-departure">Дата выезда</label>
+                        <input type="text" id="date-of-departure" name="date-of-departure" placeholder="2017-06-04">
                     </li>
                 </ul>
                 <p>
                     <label for="adult-count">Взрослые:</label>
-                    <button class="button" type="button">-</button>
-                    <input type="text" id="adult-count" name="adult-count" value="2">
-                    <button class="button" type="button">+</button>
+                    <button class="button" type="button">
+                        <span class="visually-hidden">Уменьшить количество на 1</span>
+                        -
+                    </button>
+                    <input type="text" id="adult-count" name="adult-count" placeholder="2">
+                    <button class="button" type="button">
+                        <span class="visually-hidden">Увеличить количество на 1</span>
+                        +
+                    </button>
                 </p>
                 <p>
                     <label for="children-count">Дети:</label>
-                    <button class="button" type="button">-</button>
-                    <input type="text" id="children-count" name="children-count" value="0">
-                    <button class="button" type="button">+</button>
+                    <button class="button" type="button">
+                        <span class="visually-hidden">Уменьшить количество на 1</span>
+                        -
+                    </button>
+                    <input type="text" id="children-count" name="children-count" placeholder="0">
+                    <button class="button" type="button">
+                        <span class="visually-hidden">Увеличить количество на 1</span>
+                        +
+                    </button>
                 </p>
-                <button class="button" type="submit">Найти</button>
+                <button class="button" type="submit">
+                    <span class="visually-hidden">Найти</span>
+                    Найти
+                </button>
             </div>
         </form>
-        <button class="modal-close" type="button">Закрыть</button>
+        <button class="modal-close" type="button">
+            <span class="visually-hidden">Закрыть</span>
+            Закрыть
+        </button>
     </section>
 
 </body>
